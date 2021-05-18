@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+    --color-primario:root
+    --color-textos:
+    --tipografia:
+}*/
+
+:root {
+  --color-principal: #213962;
+  --color-rosa: #1abc9c;
+  --color-sec:#17a2b8;
+  --titulo-principal:sans-serif;
+  --titulos:'Fredoka One', cursive;
+  --textos:'Quicksand', sans-serif;
+  --fondo:white;
+}
+
+*{
+   margin: 0px;
+  padding: 0px;
+  font-family: 'Quicksand', sans-serif;
+}
+  
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.images {
+  width: 12%;
+  height: auto;
+}
+  
+.logo { 
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+  
+.head {
+  background-color: var(--color-rosa);
+  padding: 2em;
+  border-bottom:  0.1em solid var(--color-sec);
+}
+  
+.iconos i{
+  color: var(--color-sec);
+  font-size: 3em;
+  justify-content:flex-start;
+}
+  
+.body {
+  padding: 100px;
+  background-color: var(--fondo);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 16px;
+}
+  
+.body :hover {
+  transform: translate(-1%);
+}
+  
+.card {
+  border: 0px solid var(--color-rosa);
+  border-radius: 0.9em;
+  flex: wrap;
+  max-width: 20em;
+  margin: 0.8em;
+  margin-bottom: 0.4em;
+  box-shadow: rgba(0, 0, 0, 0.70) 0em 2em 7em .7em;
+}
+
+.containerr {
+  padding: 20px;
+}
+  
+.texto {
+  margin: 2em;
+  height: 4em;
+  font-family: var(--textos);
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--textos);
+  color: var(--color-principal);
+}
+  
+h2 {
+  font-family: var(--titulos);
+  color: var(--color-rosa);
+  font-weight:10em;
+  line-height: 1;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-family: var(--textos);
+}
+  
+h4 {
+  font-weight: 400;
+  font-family: var(--textos);
+  font-size: 1.1em;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1em;
+  font-family: var(--textos);
+}
+  
+.hiper {
+  margin-bottom: 2em;
+  text-align: center;
+  font-family: var(--textos);
+}
+  
+.hiper a {
+  border: 0.2em solid var(--color-sec);
+  border-radius: 3em;
+  background-color: var(--color-rosa);
+  color: var(--fondo);
+  padding: 0.3em 2em;
+}
+  
+.hiper a:hover {
+  color: var(--color-rosa);
+  background-color: var(--color-sec);
+  box-shadow: 0.2em 0.1em 0 rgba(0, 0, 0, 0.2);
+}
+  
+a {
+  text-decoration: none;
+}
+  
+.iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25em;
+  margin: auto;
+}
+  
+li {
+  color: var(--fondo);
+}
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*slider*/
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
